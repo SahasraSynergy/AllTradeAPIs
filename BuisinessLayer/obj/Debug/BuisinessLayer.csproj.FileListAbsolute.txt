@@ -1,0 +1,2 @@
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\BuisinessLayer\obj\Debug\BuisinessLayer.csproj.AssemblyReference.cache
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\BuisinessLayer\obj\Debug\BuisinessLayer.csproj.CoreCompileInputs.cache
