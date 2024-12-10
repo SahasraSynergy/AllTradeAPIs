@@ -27,7 +27,8 @@ public class AnnouncementService
      announcement.AnnounementDate != null
          ? announcement.AnnounementDate.Value.ToUniversalTime()
          : DateTime.UtcNow;
-
+        announcement.DividentRecordDate =
+         announcement.DividentRecordDate.ToUniversalTime();
         _context.Announcements.Add(announcement);
         await _context.SaveChangesAsync();
     }

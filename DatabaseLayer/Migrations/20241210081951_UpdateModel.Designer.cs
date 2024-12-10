@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DatabaseLayer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241206144909_UpdateModel")]
+    [Migration("20241210081951_UpdateModel")]
     partial class UpdateModel
     {
         /// <inheritdoc />
@@ -48,6 +48,12 @@ namespace DatabaseLayer.Migrations
                     b.Property<string>("CompanyName")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<float>("DividentPerShare")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("DividentRecordDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("PDFLink")
                         .IsRequired()

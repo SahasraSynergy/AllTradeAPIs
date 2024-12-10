@@ -46,6 +46,12 @@ namespace DatabaseLayer.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<float>("DividentPerShare")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("DividentRecordDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<string>("PDFLink")
                         .IsRequired()
                         .HasColumnType("text");

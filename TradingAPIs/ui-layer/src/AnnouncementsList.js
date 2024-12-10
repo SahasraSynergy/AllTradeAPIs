@@ -24,8 +24,8 @@ const AnnouncementsList = () => {
         <div className="container mt-5">
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h1 className="text-primary">Announcements</h1>
-                <button 
-                    className="btn btn-success" 
+                <button
+                    className="btn btn-success"
                     onClick={() => navigate("/add-announcement")}
                 >
                     Add New Announcement
@@ -39,7 +39,11 @@ const AnnouncementsList = () => {
                             <th>Company Name</th>
                             <th>Category</th>
                             <th>Subcategory</th>
+                            <th>Dividend Per Share</th>
+                            <th>Dividend Record Date</th>
+                            <th>Announcement</th>
                             <th>Announcement Date</th>
+                            <th>PDF Link</th> {/* New Column */}
                         </tr>
                     </thead>
                     <tbody>
@@ -50,14 +54,33 @@ const AnnouncementsList = () => {
                                     <td>{announcement.companyName}</td>
                                     <td>{announcement.catagory}</td>
                                     <td>{announcement.subCatagory}</td>
+                                    <td>{announcement.DividentPerShare}</td>
                                     <td>
-                                        {new Date(announcement.announementDate).toLocaleDateString()}
+                                        {new Date(announcement.dividentRecordDate).toLocaleDateString("en-GB")}
+                                    </td>
+                                    <td>{announcement.announcementDetails}</td>
+                                    <td>
+                                        {new Date(announcement.announementDate).toLocaleDateString("en-GB")}
+                                    </td>
+                                    <td>
+                                        {announcement.pdfLink ? (
+                                            <a
+                                                href={announcement.pdfLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn btn-primary btn-sm"
+                                            >
+                                                View PDF
+                                            </a>
+                                        ) : (
+                                            "No PDF Available"
+                                        )}
                                     </td>
                                 </tr>
                             ))
                         ) : (
                             <tr>
-                                <td colSpan="5" className="text-center">
+                                <td colSpan="9" className="text-center">
                                     No announcements available.
                                 </td>
                             </tr>

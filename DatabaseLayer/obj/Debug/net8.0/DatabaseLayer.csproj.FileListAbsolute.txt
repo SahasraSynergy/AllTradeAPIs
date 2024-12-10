@@ -17,3 +17,4 @@ C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DatabaseLayer\obj\
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.pdb
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.genruntimeconfig.cache
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DatabaseLayer\obj\Debug\net8.0\ref\DatabaseLayer.dll
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DatabaseLayer\obj\Debug\net8.0\DatabaseLayer.sourcelink.json

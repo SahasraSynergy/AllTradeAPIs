@@ -120,21 +120,32 @@ const AddAnnouncement = () => {
                         name="announcementDetails"
                         value={formData.announcementDetails}
                         onChange={handleChange}
-                        className="form-control"
+                        className="form-control form-control-sm"
                         rows="3"
                     />
                 </div>
-                {/* <div className="mb-3">
-                    <label className="form-label">Announcement Date:</label>
+               
+                <div className="row mb-3">
+                <div className="col-md-6">
+                    <label className="form-label">Divident Per Share:</label>
+                    <textarea
+                        name="DividentPerShare"
+                        value={formData.DividentPerShare}
+                        onChange={handleChange}
+                        className="form-control form-control-sm"
+                        rows="3"
+                    />
+                </div>
+                <div className="col-md-6">
+                    <label className="form-label">Divident Record Date:</label>
                     <input
                         type="date"
-                        name="announementDate"
-                        value={formData.announementDate}
+                        name="DividentRecordDate"
+                        value={formData.dividentRecordDate}
                         onChange={handleChange}
                         className="form-control form-control-sm"
                     />
-                </div> */}
-                <div className="row mb-3">
+                </div>
                 <div className="col-md-4">
                     <label className="form-label">Announcement Date:</label>
                     <input

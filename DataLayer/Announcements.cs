@@ -16,8 +16,11 @@ namespace DataLayer
         public string XBRLLink { get; set; }
         public string PDFLink { get; set; }
         public string AnnouncementDetails { get; set; }
+        public float DividentPerShare { get; set; }
         public DateTime? AnnounementDate { get; set; }
         public DateTime AnnounementCreatedDate { get; set; }
+        public DateTime DividentRecordDate { get; set; }
+
 
     }
 }
