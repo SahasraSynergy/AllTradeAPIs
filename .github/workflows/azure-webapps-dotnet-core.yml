@@ -16,7 +16,7 @@ name: Build and deploy ASP.NET Core app to Azure Web App
 
 env:
   AZURE_WEBAPP_NAME: trading-api          # Name of your Azure Web App
-  AZURE_WEBAPP_PACKAGE_PATH: './AllTradeAPIs/TradingAPIs' # Path to the web app project (relative to the repository root)
+  AZURE_WEBAPP_PACKAGE_PATH: './TradingAPIs' # Path to the web app project (relative to the repository root)
   DOTNET_VERSION: '8'                     # .NET Core version to use
 
 on:
