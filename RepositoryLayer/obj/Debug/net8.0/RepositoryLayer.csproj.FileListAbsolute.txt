@@ -1,5 +1,3 @@
-C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\bin\Debug\net8.0\appsettings.Development.json
-C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\bin\Debug\net8.0\appsettings.json
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.deps.json
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.dll
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.pdb

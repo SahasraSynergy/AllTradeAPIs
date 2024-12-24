@@ -1,0 +1,13 @@
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\bin\Release\net8.0\DataLayer.deps.json
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\bin\Release\net8.0\DataLayer.dll
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\bin\Release\net8.0\DataLayer.pdb
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.csproj.AssemblyReference.cache
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.AssemblyInfoInputs.cache
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.AssemblyInfo.cs
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.sourcelink.json
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.dll
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\refint\DataLayer.dll
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\DataLayer.pdb
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\DataLayer\obj\Release\net8.0\ref\DataLayer.dll

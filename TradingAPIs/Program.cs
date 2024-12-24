@@ -8,6 +8,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Add this in ConfigureServices method (Startup.cs) or builder.Services.Add... in Program.cs
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<AnnouncementService>();
+
 // Read allowed origins from appsettings.json
 var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>();
 if (allowedOrigins != null) {
