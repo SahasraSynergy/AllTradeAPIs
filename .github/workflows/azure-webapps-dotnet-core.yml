@@ -1,3 +1,17 @@
+# This workflow builds and deploys an ASP.NET Core app to an Azure Web App whenever a commit is pushed to the default branch.
+#
+# Prerequisites:
+# 1. Ensure the Azure App Service web app has been created.
+#    Guide: https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net60&pivots=development-environment-vscode
+#
+# 2. Download the Publish Profile for your Azure Web App from the Azure Portal's Overview page.
+#    Guide: https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate-deployment-credentials
+#
+# 3. Create a repository secret named `AZURE_WEBAPP_PUBLISH_PROFILE` and paste the publish profile content.
+#    Guide: https://docs.microsoft.com/azure/app-service/deploy-github-actions#configure-the-github-secret
+#
+# 4. Update `AZURE_WEBAPP_NAME`, `AZURE_WEBAPP_PACKAGE_PATH`, and `DOTNET_VERSION` as required.
+
 name: Build and deploy ASP.NET Core app to Azure Web App
 
 env:
@@ -57,8 +71,13 @@ jobs:
           path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
 
   deploy:
+    permissions:
+      contents: none
     runs-on: ubuntu-latest
     needs: build
+    environment:
+      name: "Development"
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
       # Step 1: Download artifact from the build job
@@ -66,11 +85,16 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dotnet-app
-
-      # Step 2: Deploy to Azure Web App using publish profile
+      - name: Log in to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      # Step 2: Deploy the app to Azure Web App
       - name: Deploy to Azure Web App
+        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: .
+          package: ./publish
