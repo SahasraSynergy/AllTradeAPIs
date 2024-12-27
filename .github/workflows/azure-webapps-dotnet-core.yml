@@ -61,22 +61,14 @@ jobs:
       - name: Publish the project
         run: |
           cd ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-          #cd ..
           dotnet publish --configuration Release --output ./publish
-       # Step 6: Debug: Verify publish directory
-      - name: List files in publish directory
-        run: |
-          echo "Checking the publish directory:"
-          ls -R ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
-          #ls -R ./publish
-          
-      # Step 7: Upload artifact for deployment
+
+      # Step 6: Upload artifact for deployment
       - name: Upload deployment artifact
         uses: actions/upload-artifact@v3
         with:
           name: dotnet-app
           path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
-          #path: ./publish
 
   deploy:
     permissions:
@@ -93,17 +85,16 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dotnet-app
-      # Step 2: Log in to Azure
       - name: Log in to Azure
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
-      # Step 3: Deploy the app to Azure Web App
+      # Step 2: Deploy the app to Azure Web App
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
+          package: ./publish
