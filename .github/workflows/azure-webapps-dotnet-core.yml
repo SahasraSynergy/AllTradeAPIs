@@ -75,8 +75,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dotnet-app
-          #path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
-          path: ./publish
+          path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
+          #path: ./publish
 
   deploy:
     permissions:
