@@ -67,8 +67,8 @@ jobs:
       - name: List files in publish directory
         run: |
           echo "Checking the publish directory:"
-          #ls -R ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
-          ls -R ./publish
+          ls -R ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
+          #ls -R ./publish
           
       # Step 7: Upload artifact for deployment
       - name: Upload deployment artifact
