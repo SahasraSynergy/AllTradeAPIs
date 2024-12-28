@@ -35,8 +35,8 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 app.UseCors("AllowSpecificOrigin");
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     //app.UseSwagger();
     //app.UseSwaggerUI();
     app.UseSwagger();
@@ -45,7 +45,7 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
     });
 
-}
+//}
 
 app.UseHttpsRedirection();
 
