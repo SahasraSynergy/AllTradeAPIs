@@ -17,8 +17,17 @@ public class AnnouncementsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAnnouncements()
     {
-        var announcement = await _announcementService.GetAllAnnouncements();
-        return Ok(announcement);
+        try
+        {
+            var announcement = await _announcementService.GetAllAnnouncements();
+            return Ok(new { Success = true, Data = announcement });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { Success = false, Message = "An error occurred while fetching announcements.", Details = ex.Message });
+        }
+
+
     }
 
     [HttpPost]
