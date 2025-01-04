@@ -7,6 +7,9 @@ import AddAnnouncement from "./AddAnnouncement";
 function App() {
   return (
     <div className="App">
+       <header className="App-header">
+        <img src={logo} className="App-logo" alt="Custom Logo" />
+      </header>
           <Router>
             <Routes>
               <Route path="/" element={<AnnouncementsList />} />
