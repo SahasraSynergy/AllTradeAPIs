@@ -63,9 +63,9 @@ jobs:
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
-      - name: Apply EF Core migrations
-        working-directory: ./TradingAPIs
-        env:
-          DB_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
-        run: ./apply-migrations.sh
+      # - name: Apply EF Core migrations
+      #   working-directory: ./TradingAPIs
+      #   env:
+      #     DB_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      #   run: ./apply-migrations.sh
        
