@@ -33,7 +33,7 @@ public class AnnouncementsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateAnnouncement([FromBody] Announcements announcement)
     {
-        await _announcementService.CreateAnnouncements(announcement);
+        await _announcementService.CreateAnnouncementAsync(announcement);
         return CreatedAtAction(nameof(GetAnnouncements), new { id = announcement.Id }, announcement);
     }
 }

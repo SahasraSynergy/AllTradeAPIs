@@ -48,10 +48,17 @@ namespace DatabaseLayer
 
     public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {
+        //public AppDbContext CreateDbContext(string[] args)
+        //{
+        //    var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
+        //    optionsBuilder.UseNpgsql("DefaultConnection"); // Use a hardcoded or fallback connection string
+
+        //    return new AppDbContext(optionsBuilder.Options);
+        //}
         public AppDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseNpgsql("DefaultConnection"); // Use a hardcoded or fallback connection string
+            optionsBuilder.UseNpgsql("Host=oregon-postgres.render.com;Port=5432;Database=trade_pgs_db;Username=trade_pgs_db_user;Password=1O4gXP71zC1O8qbo94tJwwGOGT3LwxCT;SslMode=Require;");
 
             return new AppDbContext(optionsBuilder.Options);
         }

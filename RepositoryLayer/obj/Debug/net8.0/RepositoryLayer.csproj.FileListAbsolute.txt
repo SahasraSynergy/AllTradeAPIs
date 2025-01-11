@@ -10,9 +10,9 @@ C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\ob
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfoInputs.cache
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfo.cs
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\Reposito.A0A61804.Up2Date
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.dll
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
 C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll
-C:\Varsha-Personal\Sahashra Synergy\Trading APIS\AllTradeAPIs\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json

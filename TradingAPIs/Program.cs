@@ -2,6 +2,11 @@ using DatabaseLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.DependencyInjection;
+
+try
+{
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Read and validate connection string
@@ -63,11 +68,13 @@ if (app.Environment.IsDevelopment())
             Console.WriteLine("Applying pending migrations...");
 
             // Generate and apply a new migration programmatically
-            var migrator = scope.ServiceProvider.GetRequiredService<IMigrator>();
+            //var migrator = scope.ServiceProvider.GetRequiredService<IMigrator>();
             foreach (var migration in pendingMigrations)
             {
-                migrator.Migrate(migration);
-            }
+                    Console.WriteLine("Applying pending migrations...");
+                    dbContext.Database.Migrate();
+                    Console.WriteLine("Migrations applied successfully.");
+                }
 
             Console.WriteLine("Migrations applied successfully.");
         }
@@ -92,3 +99,12 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+}
+catch (Exception ex)
+{
+
+   
+    Console.WriteLine("An error occurred: " + ex.Message);
+    Console.WriteLine(ex.StackTrace);
+    throw ex;
+}
